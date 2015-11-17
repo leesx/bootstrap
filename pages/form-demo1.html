@@ -1,0 +1,152 @@
+<h3>表单实例</h3>
+
+<!--布局一-->
+<div>
+    <h2>布局一</h2>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">邮箱</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputText" class="col-sm-2 control-label">只读</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputText" placeholder="这里的文字只可以读" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputUser" class="col-sm-2 control-label">用户名</label>
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+                    <input type="text" placeholder="Amount" id="inputUser" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputMoney" class="col-sm-2 control-label">金额</label>
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <input type="text" placeholder="人民币" id="inputMoney" class="form-control">
+                    <div class="input-group-addon">.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputSearch" class="col-sm-2 control-label">搜索</label>
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <input type="text" placeholder="请输入要搜索的内容" id="inputSearch" class="form-control">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">复选框</label>
+            <div class="col-sm-10">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">复选框多选</label>
+            <div class="col-sm-10">
+                <select class="form-control" multiple>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">文本域</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">垂直排列</label>
+            <div class="col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        这里是一些文本啊
+                    </label>
+                </div>
+                <div class="checkbox disabled">
+                    <label>
+                        <input type="checkbox" value="" disabled>
+                        这里不可用啊
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">垂直排列</label>
+            <div class="col-sm-10">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios21" value="option1" checked>
+                        你最近怎么样啊
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios22" value="option2">
+                        最近上QQ了么
+                    </label>
+                </div>
+                <div class="radio disabled">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios23" value="option3" disabled>
+                        这个不可以用啊
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">水平排列</label>
+            <div class="col-sm-10">
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox21" value="option1"> 1
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox22" value="option2"> 2
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox23" value="option3"> 3
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">登录</button>
+                <button type="reset" class="btn btn-default">重置</button>
+            </div>
+        </div>
+    </form>
+</div>

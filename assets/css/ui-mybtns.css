@@ -1,0 +1,235 @@
+/***********************************补充Bootstrap 按钮样式************************************/
+.btn {
+    font-weight: 300;
+    transition: all 0.15s ease 0s;
+}
+.btn.active {
+    box-shadow: none;
+}
+.btn .caret {
+    margin: -2px 0 0 6px;
+}
+.btn [class^="icon-"], .btn[class*="icon-"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+.btn-default {
+    background: #bbbbbb none repeat scroll 0 0;
+    border-color: #bbbbbb;
+    color: white;
+}
+.btn-default .caret {
+    border-top-color: white;
+}
+.btn-default:hover, .btn-default.active {
+    background: transparent none repeat scroll 0 0;
+    border-color: #bbbbbb;
+    color: #aaaaaa;
+}
+.btn-default:hover .caret, .btn-default.active .caret {
+    border-top-color: #bbbbbb;
+}
+.btn-primary {
+    background: #007aff none repeat scroll 0 0;
+    border-color: #007aff;
+}
+.btn-primary:hover, .btn-primary.active {
+    background: transparent none repeat scroll 0 0;
+    border-color: #007aff;
+    color: #007aff;
+}
+.btn-primary:hover .caret, .btn-primary.active .caret {
+    border-top-color: #007aff;
+}
+.btn-success {
+    background: #60c560 none repeat scroll 0 0;
+    border-color: #60c560;
+}
+.btn-success:hover, .btn-success.active {
+    background: transparent none repeat scroll 0 0;
+    border-color: #60c560;
+    color: #60c560;
+}
+.btn-success:hover .caret, .btn-success.active .caret {
+    border-top-color: #bbbbbb;
+}
+.btn-info:hover, .btn-info.active {
+    background: transparent none repeat scroll 0 0;
+    border-color: #5bc0de;
+    color: #5bc0de;
+}
+.btn-info:hover .caret, .btn-info.active .caret {
+    border-top-color: #5bc0de;
+}
+.btn-warning:hover, .btn-warning.active {
+    background: transparent none repeat scroll 0 0;
+    border-color: #f0ad4e;
+    color: #f0ad4e;
+}
+.btn-warning:hover .caret, .btn-warning.active .caret {
+    border-top-color: #f0ad4e;
+}
+.btn-danger:hover, .btn-danger.active {
+    background: transparent none repeat scroll 0 0;
+    border-color: #d9534f;
+    color: #d9534f;
+}
+.btn-danger:hover .caret, .btn-danger.active .caret {
+    border-top-color: #d9534f;
+}
+.btn-magenta {
+    background: #d94084 none repeat scroll 0 0;
+    border-color: #d94084;
+    color: white;
+}
+.btn-magenta:hover, .btn-magenta.active {
+    background: transparent none repeat scroll 0 0;
+    border-color: #d94084;
+    color: #d94084;
+}
+.btn-magenta:hover .caret, .btn-magenta.active .caret {
+    border-top-color: #d94084;
+}
+.btn-default-outline, .btn-primary-outline, .btn-success-outline, .btn-info-outline, .btn-warning-outline, .btn-danger-outline {
+    background: transparent none repeat scroll 0 0;
+}
+.btn-default-outline {
+    border: 1px solid #bbbbbb;
+    color: #999999;
+}
+.btn-default-outline .caret {
+    border-top-color: #bbbbbb;
+}
+.btn-default-outline:hover, .btn-default-outline.active {
+    background: #bbbbbb none repeat scroll 0 0;
+    color: white;
+}
+.btn-default-outline:hover .caret, .btn-default-outline.active .caret {
+    border-top-color: white;
+}
+.btn-primary-outline {
+    border: 1px solid #007aff;
+    color: #007aff;
+}
+.btn-primary-outline .caret {
+    border-top-color: #007aff;
+}
+.btn-primary-outline:hover, .btn-primary-outline.active {
+    background: #007aff none repeat scroll 0 0;
+    color: white;
+}
+.btn-primary-outline:hover .caret, .btn-primary-outline.active .caret {
+    border-top-color: white;
+}
+.btn-success-outline {
+    border: 1px solid #60c560;
+    color: #60c560;
+}
+.btn-success-outline .caret {
+    border-top-color: #60c560;
+}
+.btn-success-outline:hover, .btn-success-outline.active {
+    background: #60c560 none repeat scroll 0 0;
+    color: white;
+}
+.btn-success-outline:hover .caret, .btn-success-outline.active .caret {
+    border-top-color: white;
+}
+.btn-info-outline {
+    border: 1px solid #5bc0de;
+    color: #5bc0de;
+}
+.btn-info-outline .caret {
+    border-top-color: #5bc0de;
+}
+.btn-info-outline:hover, .btn-info-outline.active {
+    background: #5bc0de none repeat scroll 0 0;
+    color: white;
+}
+.btn-info-outline:hover .caret, .btn-info-outline.active .caret {
+    border-top-color: white;
+}
+.btn-warning-outline {
+    border: 1px solid #f0ad4e;
+    color: #f0ad4e;
+}
+.btn-warning-outline .caret {
+    border-top-color: #f0ad4e;
+}
+.btn-warning-outline:hover, .btn-warning-outline.active {
+    background: #f0ad4e none repeat scroll 0 0;
+    color: white;
+}
+.btn-warning-outline:hover .caret, .btn-warning-outline.active .caret {
+    border-top-color: white;
+}
+.btn-danger-outline {
+    border: 1px solid #d9534f;
+    color: #d9534f;
+}
+.btn-danger-outline .caret {
+    border-top-color: #d9534f;
+}
+.btn-danger-outline:hover, .btn-danger-outline.active {
+    background: #d9534f none repeat scroll 0 0;
+    color: white;
+}
+.btn-danger-outline:hover .caret, .btn-danger-outline.active .caret {
+    border-top-color: white;
+}
+.btn-magenta-outline {
+    border: 1px solid #d94084;
+    color: #d94084;
+}
+.btn-magenta-outline .caret {
+    border-top-color: #d94084;
+}
+.btn-magenta-outline:hover, .btn-magenta-outline.active {
+    background: #d94084 none repeat scroll 0 0;
+    color: white;
+}
+.btn-magenta-outline:hover .caret, .btn-magenta-outline.active .caret {
+    border-top-color: white;
+}
+.btn-group {
+    margin: 0 10px 15px 0;
+}
+.btn-group.pull-right {
+    margin-right: 0;
+}
+.btn-group > .btn {
+    margin: 0;
+}
+.btn-group > .btn + .dropdown-toggle {
+    margin-left: 1px;
+}
+.btn-group > .btn + .dropdown-toggle .caret {
+    margin: 0;
+}
+.btn-group > .btn + .dropdown-toggle[class^="-outline"], .btn-group > .btn + .dropdown-toggle[class*="-outline"] {
+    margin-left: -1px;
+}
+.btn-group.dropup .btn .caret {
+    border-bottom-color: white;
+}
+.btn-group.dropup .btn[class^="-outline"]:hover .caret, .btn-group.dropup .btn[class*="-outline"]:hover .caret {
+    border-bottom-color: white;
+}
+.btn-group.dropup .btn-default:hover .caret, .btn-group.dropup .btn-default-outline .caret {
+    border-bottom-color: #bbbbbb;
+}
+.btn-group.dropup .btn-primary:hover .caret, .btn-group.dropup .btn-primary-outline .caret {
+    border-bottom-color: #007aff;
+}
+.btn-group.dropup .btn-success:hover .caret, .btn-group.dropup .btn-success-outline .caret {
+    border-bottom-color: #60c560;
+}
+.btn-group.dropup .btn-info:hover .caret, .btn-group.dropup .btn-info-outline .caret {
+    border-bottom-color: #5bc0de;
+}
+.btn-group.dropup .btn-warning:hover .caret, .btn-group.dropup .btn-warning-outline .caret {
+    border-bottom-color: #f0ad4e;
+}
+.btn-group.dropup .btn-danger:hover .caret, .btn-group.dropup .btn-danger-outline .caret {
+    border-bottom-color: #d9534f;
+}

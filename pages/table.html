@@ -1,0 +1,186 @@
+<h2>表格实例</h2>
+
+<h4>基本实例</h4>
+<table class="table">
+    <caption>花名册</caption>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>住址</th>
+        <th>联系电话</th>
+        <th>QQ</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>小王</td>
+        <td>男</td>
+        <td>北京海淀</td>
+        <td>15515723453</td>
+        <td>1520</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>小李</td>
+        <td>男</td>
+        <td>河南郑州</td>
+        <td>155723453</td>
+        <td>895552</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>小苏</td>
+        <td>男</td>
+        <td>江苏南通</td>
+        <td>1589222055</td>
+        <td>56222</td>
+    </tr>
+    </tbody>
+</table>
+
+<h4>带边框的表格</h4>
+<p>添加 <code>.table-bordered</code> 类为表格和其中的每个单元格增加边框。</p>
+
+
+<table class="table table-bordered">
+    <caption>花名册</caption>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>住址</th>
+        <th>联系电话</th>
+        <th>QQ</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>小王</td>
+        <td>男</td>
+        <td>北京海淀</td>
+        <td>15515723453</td>
+        <td>1520</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>小李</td>
+        <td>男</td>
+        <td>河南郑州</td>
+        <td>155723453</td>
+        <td>895552</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>小苏</td>
+        <td>男</td>
+        <td>江苏南通</td>
+        <td>1589222055</td>
+        <td>56222</td>
+    </tr>
+    </tbody>
+</table>
+
+<h4>给表格添加状态类</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <colgroup>
+            <col class="col-xs-1">
+            <col class="col-xs-7">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>Class</th>
+            <th>描述</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">
+                <code>.active</code>
+            </th>
+            <td>鼠标悬停在行或单元格上时所设置的颜色</td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <code>.success</code>
+            </th>
+            <td>标识成功或积极的动作</td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <code>.info</code>
+            </th>
+            <td>标识普通的提示信息或动作</td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <code>.warning</code>
+            </th>
+            <td>标识警告或需要用户注意</td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <code>.danger</code>
+            </th>
+            <td>标识危险或潜在的带来负面影响的动作</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>住址</th>
+        <th>联系电话</th>
+        <th>QQ</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+        <th scope="row">1</th>
+        <td>小王</td>
+        <td>男</td>
+        <td>北京海淀</td>
+        <td>15515723453</td>
+        <td>1520</td>
+    </tr>
+    <tr class="info">
+        <th scope="row">2</th>
+        <td>小李</td>
+        <td>男</td>
+        <td>河南郑州</td>
+        <td>155723453</td>
+        <td>895552</td>
+    </tr>
+    <tr class="warning">
+        <th scope="row">3</th>
+        <td>小苏</td>
+        <td>男</td>
+        <td>江苏南通</td>
+        <td>1589222055</td>
+        <td>56222</td>
+    </tr>
+    <tr class="danger">
+        <th scope="row">4</th>
+        <td>小苏</td>
+        <td>男</td>
+        <td>江苏南通</td>
+        <td>1589222055</td>
+        <td>56222</td>
+    </tr>
+    </tbody>
+</table>
+

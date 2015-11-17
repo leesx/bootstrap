@@ -1,0 +1,72 @@
+<h2>artDialog</h2>
+<div class="well">
+    <p>artDialog —— 经典的网页对话框组件，内外皆用心雕琢。</p>
+
+    <ol>
+        <li>支持普通与 12 方向气泡状对话框</li>
+        <li>完善的焦点处理，自动焦点附加与回退</li>
+        <li>支持 ARIA 标准</li>
+        <li>面向未来：基于 HTML5 Dialog 的 API</li>
+        <li>支持标准与模态对话框</li>
+        <li>丰富且友好的编程接口</li>
+        <li>能自适应内容尺寸</li>
+        <li>仅 4kb (gzip)</li>
+    </ol>
+</div>
+<p>了解跟多<a href="http://aui.github.io/artDialog/doc/index.html">artDialog官方文档</a></p>
+<div class="well">
+    <p>扩展dialog方法_对外提供接口</p>
+    <p><code>弹窗提醒——方法1：dialog.alert('内容');</code></p>
+    <p><code>loding——方法2：dialog.loding('内容');</code></p>
+    <p><code>confirm——方法3：dialog.confirm('内容');</code></p>
+    <p><code>tips——方法4：dialog.tips('内容','时间','回调方法');</code></p>
+</div>
+<h3>普通对话框</h3>
+<button class="btn btn-primary btn-lg" id="myBtn1">点我啊</button>
+<h3>模态对话框</h3>
+<button class="btn btn-primary btn-lg" id="myBtn2">点我啊</button>
+<h3>带按钮的模态对话框</h3>
+<button class="btn btn-primary btn-lg" id="myBtn3">点我啊</button>
+<h3>给对话框左下脚添加复选框</h3>
+<button class="btn btn-primary btn-lg" id="myBtn4">点我啊</button>
+<script>
+    $(function(){
+        $('#myBtn1').on('click',function(){
+            var d = dialog({
+                title: '欢迎',
+                content: '欢迎使用 artDialog 对话框组件！'
+            });
+            d.show();
+        });
+        $('#myBtn2').on('click',function(){
+            var d = dialog({
+                title: '欢迎',
+                content: '欢迎使用 artDialog 对话框组件！'
+            });
+            d.showModal();
+        });
+        $('#myBtn3').on('click',function(){
+            var d = dialog({
+                title: '提示',
+                content: '按钮回调函数返回 false 则不许关闭',
+                okValue: '确定',
+                ok: function () {
+                    this.title('提交中…');
+                    return false;
+                },
+                cancelValue: '取消',
+                cancel: function () {}
+            });
+            d.showModal();
+        });
+        $('#myBtn4').on('click',function(){
+            var d = dialog({
+                title: '欢迎',
+                content: '欢迎使用 artDialog 对话框组件！',
+                ok: function () {},
+                statusbar: '<label><input type="checkbox">不再提醒</label>'
+            });
+            d.showModal();
+        })
+    })
+</script>

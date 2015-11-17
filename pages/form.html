@@ -1,0 +1,162 @@
+<h2>表单实例</h2>
+
+<h4>demo</h4>
+<hr/>
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">邮箱</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">密码</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">上传</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> 记住登录
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">登录</button>
+</form>
+
+<h4>行间表单</h4>
+<form class="form-inline">
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleSearch" placeholder="请输入关键字">
+        <button class="btn btn-default" type="button"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputName2">用户名</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail2">邮箱</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+    </div>
+    <button type="submit" class="btn btn-default">登录</button>
+</form>
+
+
+<h3>水平排列的表单</h3>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" placeholder="请输入邮箱或用户名">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> 记住我？
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">登录</button>
+        </div>
+    </div>
+</form>
+
+
+<div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess2">成功</label>
+    <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputSuccess2Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-warning has-feedback">
+    <label class="control-label" for="inputWarning2">警告</label>
+    <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+    <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+    <span id="inputWarning2Status" class="sr-only">(warning)</span>
+</div>
+<div class="form-group has-error has-feedback">
+    <label class="control-label" for="inputError2">错误</label>
+    <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+    <span id="inputError2Status" class="sr-only">(error)</span>
+</div>
+<div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputGroupSuccess1">成功</label>
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+    </div>
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+</div>
+
+<h3>下拉列表（select）</h3>
+<div>
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    <h4>多选</h4>
+    <select multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+</div>
+<h3>文本域</h3>
+<textarea class="form-control" rows="3"></textarea>
+<h3>静态控件</h3>
+<p>如果需要在表单中将一行纯文本和 <code>label</code> 元素放置于同一行，为 <code>&lt;p&gt;</code> 元素添加 <code>.form-control-static</code> 类即可。</p>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">email@example.com</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+</form>
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only">Email</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword2" class="sr-only">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default">Confirm identity</button>
+</form>
+
+
+<!--布局一-->
+<div class="col-md-5">
+    <a href="javascript:" rel="form-demo1.html" class="form-demo btn btn-primary btn-lg">常见布局实例1</a>
+
+</div>
+<!--布局一-->
+<div class="col-md-5 col-md-offset-2">
+    <a href="javascript:" rel="form-demo2.html" class="form-demo btn btn-primary btn-lg">常见布局实例2</a>
+</div>

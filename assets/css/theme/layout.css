@@ -1,0 +1,106 @@
+/* 基于Bootstrap的后台框架
+ * 2015-7-26
+ * 云农场
+ */
+
+ul,li{
+    list-style: none;
+}
+
+/*布局*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.mt10{
+    margin-top:10px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+
+.with-auto{
+    width: auto;
+}
+/*字体*/
+.font10{
+    font-size: 10px;
+}
+.font12{
+    font-size: 12px;
+}
+.font14{
+    font-size: 14px;
+}
+.font16{
+    font-size: 16px;
+}
+.font18{
+    font-size: 18px;
+}
+/*颜色*/
+.color-red{
+    color: #f00;
+}
+.color-blue{
+    color: #337ab7;
+}
+.color-yellow{
+    color: #f60;
+}
+
+/* 头部 */
+
+.module-header{
+    position: relative;
+    height: 49px;
+    padding: 0;
+    background: #252525 none repeat scroll 0 0;
+    border-bottom: 0 none;
+    box-shadow: 0 0 5px #333;
+    color:#fff;
+}
+.module-header .logo{
+    padding:9px 0 0 0;
+    font-size: 22px;
+
+}
+.module-header .logo a{
+    color: #fff;
+}
+.header-l{
+    margin-left: 20px;
+}
+.header-r{
+    margin:12px 20px 0 0;
+    font-family: '宋体';
+}
+.module-aside{
+    position: relative;
+    width: 210px;
+    padding-top:10px;
+    height: 600px;
+    background:#f0f0f0 url(../../../assets/images/aside-right-shadow.jpg) right 0 repeat-y scroll;
+}
+.list-nav{
+    padding-left: 0;
+}
+.list-group-item{
+    background: none;
+}
+
+.module-content{
+    position: relative;
+    width: 100%;
+    margin-left: -210px;
+}
+.module-main{
+    position: relative;
+    margin-left:220px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+

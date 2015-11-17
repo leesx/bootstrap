@@ -1,0 +1,19 @@
+<h2>警告框</h2>
+<p>当使用 <code>.close</code> 按钮时，它必须是 <code>.alert-dismissible</code> 的第一个子元素，并且在它之前不能有任何文本内容。</p>
+<p>为关闭按钮添加 <code>data-dismiss="alert"</code> 属性就可以使其自动为警告框赋予关闭功能。关闭警告框也就是将其从 DOM 中删除。</p>
+<div data-example-id="dismissible-alert-js" class="bs-example bs-example-standalone">
+    <div role="alert" class="alert alert-warning alert-dismissible fade in">
+        <button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>
+        <strong>一个错误!</strong> 请检查网络连接！.
+    </div>
+
+    <div role="alert" class="alert alert-danger alert-dismissible fade in">
+        <button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>
+        <h4>这个一个错误</h4>
+        <p>请检查你的网络环境，并重新连接。</p>
+        <p>
+            <button class="btn btn-danger" type="button">Take this action</button>
+            <button class="btn btn-default" type="button">Or do this</button>
+        </p>
+    </div>
+</div>

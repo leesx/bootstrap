@@ -1,0 +1,33 @@
+<h2>提示</h2>
+
+<div class="bs-example-tooltips" >
+    <button title="" data-placement="left" data-toggle="tooltip" class="btn btn-default" type="button" data-original-title="提示在左侧">提示在左侧</button>
+    <button title="" data-placement="top" data-toggle="tooltip" class="btn btn-default" type="button" data-original-title="提示在顶部">提示在顶部</button>
+    <button title="" data-placement="bottom" data-toggle="tooltip" class="btn btn-default" type="button" data-original-title="提示在底部">提示在底部</button>
+    <button title="" data-placement="right" data-toggle="tooltip" class="btn btn-default" type="button" data-original-title="提示在右侧">提示在右侧</button>
+</div>
+<!-- HTML to write -->
+<a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+
+<!--表单提示-->
+<h3>表单提示</h3>
+<div>
+    <p><input class="form-control with-auto" type="text" data-toggle="tooltip" title="请输入用户名"/></p>
+
+    <p>
+        <input class="form-control with-auto" type="text" data-placement="right" data-toggle="tooltip" placeholder="请输入用户名" title="邮箱或手机号"/>
+    </p>
+</div>
+<h3>静态弹出框</h3>
+<div class="bs-example bs-example-padded-bottom">
+    <p>点击切换</p>
+    <button data-content="And here's some amazing content. It's very engaging. Right?" title="" data-toggle="popover" class="btn btn-lg btn-danger bs-docs-popover" type="button" data-original-title="Popover title" aria-describedby="popover529780">点我弹出/隐藏弹出框</button>
+    <p>点击空白消失</p>
+    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">可消失的弹出框</a>
+</div>
+<script>
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+    })
+</script>

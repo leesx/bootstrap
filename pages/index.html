@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap模板</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/css/non-responsive.css"/>
+    <link rel="stylesheet" href="../assets/css/theme/layout.css"/>
+    <link rel="stylesheet" href="../assets/css/ui-mybtns.css"/>
+    <link rel="stylesheet" href="../assets/css/ui-dialog.css"/>
+    <!--[if lte IE 7]>
+    <script type="text/javascript">
+        window.location.href = 'kill-ie.html';
+    </script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <script>
+        var BM_CONFIG = {
+            version : '20157291832'
+        };
+    </script>
+</head>
+<body>
+<div id="header">
+    <div class="module-header">
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="pull-left header-l">
+                    <div class="logo fl">
+                        <strong><span aria-hidden="true" class="glyphicon glyphicon-th-large"></span> Bootstrap MyAdmin</strong>
+
+                    </div>
+                    <span class="label label-default">BEAT</span>
+
+                </div>
+                <div class="pull-right header-r">
+                    <span class="welcome"><span aria-hidden="true" class="glyphicon glyphicon-user"></span> Hello,欢迎来到</span>
+                    <a href="" class="text-danger"><span aria-hidden="true" class="glyphicon glyphicon-log-out"></span> 退出</a>
+
+                    <span aria-hidden="true" class="glyphicon glyphicon-cog"></span> <span>设置</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content" class="clearfix">
+    <div class="module-content pull-right">
+        <div class="module-main">
+            <h2>Bootstrap V3常用组件</h2>
+            <p>具体参考官方文档 <a href="http://v3.bootcss.com/components/">点击</a></p>
+            <div class="padding bg-danger">
+                <p>该框架依赖BootStrap V3版本，使用seajs做加载器，将代码模块化。整合了常用组件，日历组件97date,柱形图组件echarts,模态弹框组件artDialog,以及Bootstrap自带组件和UI</p>
+            </div>
+            <!--面板begin-->
+            <h3>基本面板</h3>
+            <p>点击下面的按钮即可通过 JavaScript 启动一个模态框。此模态框将从上到下、逐渐浮现到页面前。</p>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">面版标题</h3>
+                </div>
+                <div class="panel-body">
+                    面版内容
+                </div>
+            </div>
+            <!--面板end-->
+
+            <!--模态弹出框begin-->
+            <h3>动态弹出框</h3>
+            <p>点击下面的按钮即可通过 JavaScript 启动一个模态框。此模态框将从上到下、逐渐浮现到页面前。</p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                点击
+            </button>
+            <!--模态弹出框end-->
+
+            <!--分页begin-->
+            <h3>分页</h3>
+            <nav>
+                <ul class="pagination">
+                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true" class="glyphicon glyphicon-triangle-left"></span></a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" aria-label="Next"><span aria-hidden="true" class="glyphicon glyphicon-triangle-right"></span></a></li>
+                </ul>
+            </nav>
+            <h3>翻页</h3>
+            <nav>
+                <ul class="pager">
+                    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                </ul>
+            </nav>
+            <!--分页end-->
+            <!--面包屑begin-->
+            <h3>面包屑</h3>
+            <ul class="breadcrumb">
+                <li><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-home"></span> 首页</a> </li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ul>
+            <!--面包屑end-->
+            <!--缩略图begin-->
+            <h3>缩略图</h3>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZDM0OGNlYzAgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkMzQ4Y2VjMCI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MC41IiB5PSI5NC44Ij4xNzF4MTgwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZDM0OGM5NTUgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkMzQ4Yzk1NSI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MC41IiB5PSI5NC44Ij4xNzF4MTgwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZDM0ODc3M2YgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkMzQ4NzczZiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MC41IiB5PSI5NC44Ij4xNzF4MTgwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZDM0OGNiNjIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVkMzQ4Y2I2MiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MC41IiB5PSI5NC44Ij4xNzF4MTgwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                    </a>
+                </div>
+            </div>
+            <!--缩略图end-->
+            <!--警告框begin-->
+            <div class="alert alert-success">
+                <span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> 成功的
+            </div>
+            <div class="alert alert-danger">
+                <span aria-hidden="true" class="glyphicon glyphicon-remove-sign"></span> 危险
+            </div>
+            <div class="alert alert-warning">
+                <span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span> 警告
+            </div>
+            <div class="alert alert-info">
+                <span aria-hidden="true" class="glyphicon glyphicon-info-sign"></span> 重要的
+            </div>
+
+            <!--警告框end-->
+
+            <!--标签begin-->
+            <h3>标签</h3>
+            <div>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </div>
+            <!--标签end-->
+            <!--进度条begin-->
+            <h3>进度条</h3>
+            <div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        60%
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                        20% Complete
+                    </div>
+                </div>
+            </div>
+
+            <!--进度条end-->
+
+            <!--徽章begin-->
+            <h3>徽章</h3>
+            <div class="row">
+                <div class="col-xs-2">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">14</span>
+                            今日新闻
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">2</span>
+                            昨日新闻
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span>
+                            美食
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--徽章end-->
+
+            <div>
+                <!--标签页begin-->
+                <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
+                    <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Profile</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                            <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a></li>
+                            <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+                        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                    </div>
+                </div>
+                <!--标签页end-->
+            </div>
+        </div>
+    </div>
+    <div class="pull-left module-aside">
+        <div class="aside-nav">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading1">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                                基本布局
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="">基本面板</a></li>
+                                <li><a rel="helper-classes.html" href="javascript:">辅助类</a></li>
+                                <li><a rel="dialog.html" href="javascript:">模态弹出框</a></li>
+                                <li><a rel="icon.html" href="javascript:">图标</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading2">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                常用组件
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a rel="date.html" href="javascript:">日历组件</a></li>
+                                <li><a rel="form.html" href="javascript:">表单</a></li>
+                                <li><a rel="table.html" href="javascript:">表格</a></li>
+                                <li><a rel="echarts.html" href="javascript:">图表柱形图</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading3">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                小工具
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a rel="tips.html" href="javascript:">提醒tips</a></li>
+                                <li><a rel="alert.html" href="javascript:">警告框</a></li>
+                                <li><a rel="buttons.html" href="javascript:">按钮组</a></li>
+                                <li><a rel="button-state.html" href="javascript:">按钮状态</a></li>
+                                <li><a rel="collapse.html" href="javascript:">手风琴</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script  src="../assets/js/sea.js" id="seajsnode"></script>
+<script  src="../assets/js/script-config.js"></script>
+<script>
+    seajs.use('app');
+</script>
+
+</body>
+</html>

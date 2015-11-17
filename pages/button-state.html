@@ -1,0 +1,40 @@
+<h2>按钮状态</h2>
+
+<button type="button" id="myButton" data-loading-text="登录中..." class="btn btn-primary" autocomplete="off">
+    登录
+</button>
+<!--模拟复选框-->
+<h4>模拟复选框</h4>
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary active">
+        <input type="checkbox" autocomplete="off" checked> 选一
+    </label>
+    <label class="btn btn-primary">
+        <input type="checkbox" autocomplete="off"> 选二
+    </label>
+    <label class="btn btn-primary">
+        <input type="checkbox" autocomplete="off"> 选三
+    </label>
+</div>
+<!--模拟单选-->
+<h4>模拟单选</h4>
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> 男
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> 女
+    </label>
+</div>
+<script>
+    $(function(){
+        $('#myButton').on('click', function () {
+
+            var $btn = $(this).button('loading');
+            console.log($btn);
+            setTimeout(function(){
+                $btn.button('reset')
+            },1000)
+        })
+    })
+</script>
